@@ -15,12 +15,14 @@ var thatArray = ["Facebook Platform","Erlang Enthusiasts","Ex-Girlfriends",
 "Cracked iPhone Apps","Stolen Goods","Adult Dancers","People Who Hate Groupon","Hunters","Sysadmins","Bath Salts","Nootropics","California","Government Corruption","Political Attack Ads","Whiskey Lovers","Parking Tickets","Highway Accidents","Traveling","Airlines","Presentation Tools","Your Boss","Ponzi Schemes","Your Finances","Restroom Attendants","Your Aquarium","Your Cat's Litter Box","Pets","Alcoholics",
 "Camp Counselors","Nature Blogs","World of Warcraft","Models","Family Guy Enthusiasts","The Army","Cheap Vodka","Tech Incubators","Star Trek Conventions","Presentation Tools","Small Businesses","Beer","Nightclub Lines","Semi-Active Volcanoes", "Sanctimonial Artifacts","Traveling Abroad","Your Mom","Billionaires","Happy Hours","Ugg Boots","The Homeless","Blacking Out","Red Wine","Happy Families","Social Outcasts",
 "Surgeons","Pounding Jagger Bombs","Textbooks","Coffee Shops","Baristas"];
-var aa = Math.floor(Math.random() * 5);
-function randomConbinations(array1, array2) {
-  var index1 = Math.floor(Math.random() * array1.length);
-  var index2 = Math.floor(Math.random() * array2.length);
-  console.log(index1, index2);
-  console.log(array1[index1] + " " + array2[index2]);
-}
+var randomStuff = ["a", "b", "c"]
 
-randomConbinations(thisArray, thatArray);
+function randomConbinations(arrays) {
+  var returnString = ""
+  for (var i = 0; i < arrays.length; i++) {
+    var ranIndex = Math.floor(Math.random() * arrays[i].length);
+    returnString += arrays[i][ranIndex] + " "
+  }
+  console.log(returnString);
+}
+randomConbinations([thisArray, thatArray, randomStuff]);
