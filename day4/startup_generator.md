@@ -1,3 +1,10 @@
+# Startup Generator
+
+Write a javascript program that randomly generates a startup idea for you. Each time you run it, you should see a random combination for a great startup idea.
+
+Use the arrays below to get started:
+
+```javascript
 var thisArray = ["Skynet","Digital Music Distribution",
 "FitBit","Realtime Data","ManPacks","Landing Page",
 "Conversion Funnel","Social Network","Airbnb","SnapChat",
@@ -15,14 +22,4 @@ var thatArray = ["Facebook Platform","Erlang Enthusiasts","Ex-Girlfriends",
 "Cracked iPhone Apps","Stolen Goods","Adult Dancers","People Who Hate Groupon","Hunters","Sysadmins","Bath Salts","Nootropics","California","Government Corruption","Political Attack Ads","Whiskey Lovers","Parking Tickets","Highway Accidents","Traveling","Airlines","Presentation Tools","Your Boss","Ponzi Schemes","Your Finances","Restroom Attendants","Your Aquarium","Your Cat's Litter Box","Pets","Alcoholics",
 "Camp Counselors","Nature Blogs","World of Warcraft","Models","Family Guy Enthusiasts","The Army","Cheap Vodka","Tech Incubators","Star Trek Conventions","Presentation Tools","Small Businesses","Beer","Nightclub Lines","Semi-Active Volcanoes", "Sanctimonial Artifacts","Traveling Abroad","Your Mom","Billionaires","Happy Hours","Ugg Boots","The Homeless","Blacking Out","Red Wine","Happy Families","Social Outcasts",
 "Surgeons","Pounding Jagger Bombs","Textbooks","Coffee Shops","Baristas"];
-
-var randomStuff = ["a", "b", "c"]
-function randomConbinations(arrays) {
-  var returnString = ""
-  for (var i = 0; i < arrays.length; i++) {
-    var ranIndex = Math.floor(Math.random() * arrays[i].length);
-    returnString += arrays[i][ranIndex] + " "
-  }
-  console.log(returnString);
-}
-randomConbinations([thisArray, thatArray, randomStuff]);
+```
