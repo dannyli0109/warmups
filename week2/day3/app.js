@@ -27,3 +27,8 @@ var removeNonChar = function(word) {
 console.log(wordIsPalindrom("aba"));
 console.log(wordIsPalindrom("No ‘x’ in&^%$%^&*&^ ‘Nixon’"));
 console.log(wordIsPalindrom("No ‘x’ in ‘Nixondasda,,,.,..,.sksjdkasjd’"));
+
+
+regular expression
+/[^\w]|/g   ^\w -> not a word
+regexr.com
